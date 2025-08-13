@@ -1,61 +1,83 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Mi Sitio Web</title>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+/* Importar una fuente bonita desde Google Fonts (Opcional, pero recomendado) */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display:wght@700&display=swap');
 
-    body {
-      font-family: 'Montserrat', sans-serif;
-      background: linear-gradient(to right, #1e3c72, #2a5298);
-      color: white;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
-      text-align: center;
-      padding: 20px;
-    }
+body {
+    margin: 0;
+    padding: 20px;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #FADADD; /* Tono de rosado pastel */
+    color: #4B4B4B; /* Color de texto principal (gris oscuro) */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
 
-    h1 {
-      font-size: 3rem;
-      margin-bottom: 20px;
-    }
+.container {
+    background-color: rgba(255, 255, 255, 0.85); /* Fondo blanco semi-transparente para el contenido */
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    max-width: 650px;
+    text-align: center;
+}
 
-    p {
-      font-size: 1.2rem;
-      max-width: 600px;
-    }
+h1 {
+    font-family: 'Playfair Display', serif; /* Fuente elegante para el título principal */
+    font-size: 3.5em;
+    color: #D14D72; /* Un tono de rosa más fuerte para el título */
+    margin: 0 0 20px 0;
+}
 
-    footer {
-      margin-top: 40px;
-      font-size: 0.9rem;
-      opacity: 0.7;
-    }
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 1.8em;
+    color: #333;
+    margin-bottom: 10px;
+}
 
-    a {
-      color: #a0d8ef;
-      text-decoration: none;
-    }
+.offer-details {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
 
-    a:hover {
-      text-decoration: underline;
-    }
-  </style>
-</head>
-<body>
-  <h1>¡Bienvenido a Joyería Argenta!</h1>
-  <p>Este sitio web está diseñado <strong>y listo!</strong> para descubrir nuestros productos.</p>
-  <footer>
-    &copy; 2025 • Joyería Argenta 😊
-  </footer>
-</body>
-</html>
+.features-list {
+    list-style-type: none; /* Quita los puntos de la lista */
+    padding: 0;
+    margin: 0 auto 30px auto;
+    max-width: 450px; /* Centra la lista de beneficios */
+    text-align: left; /* Alinea el texto de la lista a la izquierda */
+    font-size: 1.1em;
+}
+
+.features-list li {
+    margin-bottom: 15px;
+}
+
+.cta {
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-bottom: 25px;
+}
+
+.contact-info {
+    border-top: 1px solid #ddd;
+    padding-top: 20px;
+    font-size: 1em;
+}
+
+.contact-info p {
+    margin: 5px 0;
+}
+
+.contact-info a {
+    color: #D14D72; /* Mismo color que el título para el enlace */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact-info a:hover {
+    text-decoration: underline; /* Subraya el enlace al pasar el mouse */
+}
